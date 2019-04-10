@@ -1,0 +1,43 @@
+﻿@using Microsoft.AspNet.Identity
+@model List<StudyCase.UI.Models.ReservationViewModel> 
+
+<div class="col-sm-8">
+    <div class="container">
+        <h1> @TempData["result"]</h1>
+        <h2>@ViewBag.SelectedDate Reservation List</h2>
+        <table class="table table-hover" id="reservationTable">
+            <thead>
+            <tr>
+                <th>Reservation Id</th>
+                <th>User Id</th>
+                <th>User Mail</th>
+                <th>Reservation Hour</th>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <th>Delete</th>
+                }
+
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ReservationId</td>
+                    <td>@item.UserId</td>
+                    <td>@item.UserMail</td>
+                    <td>@item.ReservationStartDate.TimeOfDay</td>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <td><button type="button" class="btn btn-danger" onclick="deleteReservation(@item.ReservationId)">X</button></td>
+                    }
+                    else if (User.Identity.GetUserId() == item.UserId.ToString())
+                    {
+                        <td><button type="button" class="btn btn-danger" onclick="deleteReservation(@item.ReservationId)">X</button></td>
+                    }
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyCase.UI", "StudyCase.UI\StudyCase.UI.csproj", "{C2758883-9B2B-4D0D-B637-A61C7747006F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyCase.Model", "StudyCase.Model\StudyCase.Model.csproj", "{46B8086A-4CD3-44E3-ACE6-AFA3B694A226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyCase.Repository", "StudyCase.Repository\StudyCase.Repository.csproj", "{7882B1F0-A50B-44AC-8A6B-C0117DF2A204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyCase.Service", "StudyCase.Service\StudyCase.Service.csproj", "{905A4E10-C8A8-445B-8602-B08F58218414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyCase.AppStarter", "StudyCase.AppStarter\StudyCase.AppStarter.csproj", "{8D5A7F50-057F-4D24-8C6C-0081703B4EF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2758883-9B2B-4D0D-B637-A61C7747006F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2758883-9B2B-4D0D-B637-A61C7747006F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2758883-9B2B-4D0D-B637-A61C7747006F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2758883-9B2B-4D0D-B637-A61C7747006F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B8086A-4CD3-44E3-ACE6-AFA3B694A226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B8086A-4CD3-44E3-ACE6-AFA3B694A226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B8086A-4CD3-44E3-ACE6-AFA3B694A226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B8086A-4CD3-44E3-ACE6-AFA3B694A226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7882B1F0-A50B-44AC-8A6B-C0117DF2A204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7882B1F0-A50B-44AC-8A6B-C0117DF2A204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7882B1F0-A50B-44AC-8A6B-C0117DF2A204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7882B1F0-A50B-44AC-8A6B-C0117DF2A204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905A4E10-C8A8-445B-8602-B08F58218414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905A4E10-C8A8-445B-8602-B08F58218414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905A4E10-C8A8-445B-8602-B08F58218414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905A4E10-C8A8-445B-8602-B08F58218414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D5A7F50-057F-4D24-8C6C-0081703B4EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5A7F50-057F-4D24-8C6C-0081703B4EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5A7F50-057F-4D24-8C6C-0081703B4EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5A7F50-057F-4D24-8C6C-0081703B4EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://birkanogecan.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = StudyCase.UI\\StudyCase.UI.csproj
+		SccProjectName1 = StudyCase.UI
+		SccLocalPath1 = StudyCase.UI
+		SccProjectUniqueName2 = StudyCase.Model\\StudyCase.Model.csproj
+		SccProjectName2 = StudyCase.Model
+		SccLocalPath2 = StudyCase.Model
+		SccProjectUniqueName3 = StudyCase.Repository\\StudyCase.Repository.csproj
+		SccProjectName3 = StudyCase.Repository
+		SccLocalPath3 = StudyCase.Repository
+		SccProjectUniqueName4 = StudyCase.Service\\StudyCase.Service.csproj
+		SccProjectName4 = StudyCase.Service
+		SccLocalPath4 = StudyCase.Service
+		SccProjectUniqueName5 = StudyCase.AppStarter\\StudyCase.AppStarter.csproj
+		SccProjectName5 = StudyCase.AppStarter
+		SccLocalPath5 = StudyCase.AppStarter
+	EndGlobalSection
+EndGlobal

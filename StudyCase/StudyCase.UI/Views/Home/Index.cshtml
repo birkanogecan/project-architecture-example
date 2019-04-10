@@ -1,0 +1,57 @@
+﻿@model List<StudyCase.UI.Models.ReservationViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+<script>
+    function addReservation(parameters) {
+        $.ajax({
+            type: "GET",
+            url: "/Home/AddReservation",
+            data: { date: $('#sandbox-container').val(), time: $('#time').val() },
+            success: function (data) {
+                $('#list').html(data);
+             
+            },
+            error: function (data) {
+                alert("Sign in please");
+            }
+        });
+    }
+</script>
+<div class="jumbotron">
+    <h1>Reservation StudyCase</h1>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <h4>Select Reservation Date</h4>
+        <input id="sandbox-container" data-date-format="dd/mm/yyyy"/>
+
+        <h4>Set Your Reservation Time</h4>
+        <select class="form-control" id="time">
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+            <option value="14">14:00</option>
+            <option value="15">15:00</option>
+            <option value="16">16:00</option>
+            <option value="17">17:00</option>
+            <option value="18">18:00</option>
+            <option value="19">19:00</option>
+            <option value="20">20:00</option>
+            <option value="21">21:00</option>
+            <option value="22">22:00</option>
+            <option value="23">23:00</option>
+        </select>
+        @{
+            string buttonClass = !User.Identity.IsAuthenticated ? "disabled" : "";
+            string buttonText = !User.Identity.IsAuthenticated ? "Please Login To Add Reservation" : "Add Reservation";
+        }
+        <button type="button" class="btn btn-primary" @buttonClass onclick="addReservation()">@buttonText</button>
+    </div>
+    <div id="list">
+        @{
+            Html.RenderAction("GetReservationList", "Home", Model);
+        }
+    </div>
+</div>
+
